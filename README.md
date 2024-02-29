@@ -25,9 +25,6 @@
     ```objc
     +(instancetype)string;
     ```
-    > **💡 팩토리 메서드 (Factory Method)란?**
-    > <br>
-    > • **객체 생성 메서드. 즉, 생성자 메서드 (Default constructor method, Arguments constructor method)**
 
   - **Instance Method**
     - '(-)' 기호 사용

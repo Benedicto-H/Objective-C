@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import "Rectangle.h"
 #import "Square.h"
+#import "Calculator.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -53,6 +54,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"square area: %.1lf", [square getArea]);
          */
         
+        /*
         Rectangle *factoryRect1 = [Rectangle rectangle];
         NSLog(@"factoryRect1 area: %.1lf", [factoryRect1 getArea]);
         
@@ -61,6 +63,26 @@ int main(int argc, const char * argv[]) {
         
         Square *factorySquare = [Square squareWithWidth:50];
         NSLog(@"factorySquare: %.1lf", [factorySquare getArea]);
+         */
+        
+        /*
+        Calculator *deskCalc = [Calculator new]; //  -> Calculator *deskCalc = [[Calculator alloc] init];
+        
+        [deskCalc setAccumulator:100.0];
+        [deskCalc add:200.0];
+        [deskCalc divide:15.0];
+        [deskCalc subtract:10.0];
+        [deskCalc multiply:5.0];
+        
+        NSLog(@"The result is %g", [deskCalc accumulator]);
+         */
+        
+        NSString *str = @"Hello";
+        
+        SEL s = @selector(uppercaseString);
+        NSString *res = [str performSelector:s];
+        
+        NSLog(@"res: %@", res);
     }
     return 0;
 }

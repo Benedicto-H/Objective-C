@@ -9,28 +9,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Rectangle : NSObject {
-    
-    //  Member Fields
-    double width;
-    double height;
-}
+@interface Rectangle : NSObject
 
-//  Methods
--(id)initWithWidth:(double)newWidth height:(double)newHeight;
-
--(void)setWidth:(double)newWidth;   //  Setter
--(double)width;    //  Getter
--(void)setHeight:(double)newHeight;   //  Setter
--(double)height;   //  Getter
+@property (nonatomic) double width;
+@property double height;
 
 -(double)getArea;
--(double)setWidth:(double)newWidth height:(double)newHeight;
--(BOOL)isSquare;
 
-//  Factory Methods
-+(id)rectangle;
-+(id)rectangleWithWidth:(double)newWidth height:(double)newHeight;
+@property (readonly) double getAreaWithPropertyReadonly;
+//@property (readwrite) double getAreaWithPropertyReadWrite;
 
 @end
 

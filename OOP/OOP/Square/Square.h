@@ -11,12 +11,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Square : Rectangle
 
-//  Method
--(id)initWithWidth:(double)newWidth;
-
-//  Factory Method
-+(id)squareWithWidth:(double)newWidth;
-
 @end
 
 NS_ASSUME_NONNULL_END

@@ -6,22 +6,30 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Rectangle.h"
-#import "Square.h"
-#import "Calculator.h"
+#import "Song/Song.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        Rectangle *rect = [Rectangle new];
         
-        rect.width = 10;
-        rect.height = 20;
+        //  Create instance
+        //  case1. with Default constructor
+        Song *song1 = [Song new];   //  -> Song *song1 = [[Song alloc] init];
+        song1.title = @"song1_Title";
+        song1.artist = @"song1_Artist";
+        song1.duration = 10;
         
-        NSLog(@"[rect] width: %.1lf, height: %.1f", rect.width, rect.height);
-        NSLog(@"[rect] getArea: %.1lf", [rect getArea]);
-        NSLog(@"[rect] getAreaWithPropertyReadonly: %.1lf", rect.getAreaWithPropertyReadonly);
-//        rect.getAreaWithProperty = 100.0;   //  ->  Compile error
+        [song1 play];
+        
+        //  case2. with Arguments constructor
+        Song *song2 = [[Song alloc] initWithTitle:@"song2_Title" artist:@"song2_Artist"];
+        
+        [song2 play];
+        
+        //  case3. with Factory method pattern
+        Song *song3 = [Song songWithTitle:@"song3_Title" artist:@"song3_Artist"];
+        
+        [song3 play];
     }
     return 0;
 }

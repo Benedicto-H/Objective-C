@@ -185,7 +185,7 @@
 
   > • **instancetype**: 클래스의 initailzer의 return type을 **해당 클래스의 인스턴스로 반환**
   > <br>
-  > • **id**: initailzer의 retrun type은 **모든 클래스의 인스턴스를 가리킴**
+  > • **id**: initailzer의 retrun type은 **모든 클래스의 인스턴스를 가리킴** (-> Swift의 `Any`와 유사)
   > <br>
   > <br>
   > **[Official Docs]**: [`id` vs `instancetype`](https://developer.apple.com/library/archive/releasenotes/ObjectiveC/ModernizationObjC/AdoptingModernObjective-C/AdoptingModernObjective-C.html)

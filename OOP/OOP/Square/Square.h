@@ -11,6 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Square : Rectangle
 
+-(instancetype)init;
+-(instancetype)initWithWidth:(double)newWidth;
+
 @end
 
 NS_ASSUME_NONNULL_END

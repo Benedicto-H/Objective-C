@@ -46,6 +46,7 @@ int main(int argc, const char * argv[]) {
          */
         
         //  Dictionary
+        /*
         /// Immutable
         NSDictionary *immutableDict = [[NSDictionary alloc] initWithObjectsAndKeys:@"object1", @"Key1", @"object2", @"Key2", @"object3", @"Key3", nil];
         NSDictionary *immutableDictLiteral = @{@"Key1": @"new object1",
@@ -64,6 +65,21 @@ int main(int argc, const char * argv[]) {
         
         mutableDict[@"Key2"] = @"new obj2";
         NSLog(@"mutableDict: %@", mutableDict);
+         */
+        
+        //  Complex
+        NSMutableArray *array = [NSMutableArray array];
+        
+        [array addObject:@{@"Key": @"Value"}];
+        [array addObject:@[@"element1", @"element2"]];
+        [array addObject:[NSNumber numberWithInt:10]];
+        [array addObject:@3.14159];
+        
+        NSLog(@"===== array ===== \n%@", array);
+        
+        for (id object in array) {
+            NSLog(@"%@", object);
+        }
     }
     return 0;
 }

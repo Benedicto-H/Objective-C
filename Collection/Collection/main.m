@@ -11,8 +11,11 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         
-        //  Immutable
+        //  Array
+        /*
+        /// Immutable
         NSArray *immutableArr = [[NSArray alloc] initWithObjects:@"element1", @"element2", @"element3", nil];
+//        NSArray *immutableArrLiteral = @[@"value1", @"value2", @"value3"];
         
         NSLog(@"immutableArr: %@", immutableArr);
         
@@ -25,7 +28,7 @@ int main(int argc, const char * argv[]) {
             NSLog(@"immutableArr_element: %@", element);
         }
         
-        //  Mutable
+        /// Mutable
         NSMutableArray *mutableArr = [NSMutableArray array];
         
         [mutableArr addObject:@"value1"];
@@ -40,6 +43,27 @@ int main(int argc, const char * argv[]) {
         
         [mutableArr removeAllObjects];
         NSLog(@"mutableArr: %@", mutableArr);
+         */
+        
+        //  Dictionary
+        /// Immutable
+        NSDictionary *immutableDict = [[NSDictionary alloc] initWithObjectsAndKeys:@"object1", @"Key1", @"object2", @"Key2", @"object3", @"Key3", nil];
+        NSDictionary *immutableDictLiteral = @{@"Key1": @"new object1",
+                                               @"Key2": @"new object2",
+                                               @"Key3": @"new object3"};
+        
+        NSLog(@"(dict) Key1: %@", [immutableDict objectForKey:@"Key1"]);
+        
+        /// Mutable
+        NSMutableDictionary *mutableDict = [NSMutableDictionary dictionary];
+        
+        [mutableDict setObject:@"obj1" forKey:@"Key1"];
+        [mutableDict setObject:@"obj2" forKey:@"Key2"];
+        
+        NSLog(@"mutableDict: %@", mutableDict);
+        
+        mutableDict[@"Key2"] = @"new obj2";
+        NSLog(@"mutableDict: %@", mutableDict);
     }
     return 0;
 }

@@ -24,6 +24,10 @@
     NSLog(@"Title: %@ \nArtist: %@ \nDuration: %d", self.title, self.artist, self.duration);
 }
 
+- (BOOL)isEqualToSongTitle:(NSString *)title {
+    return [self.title isEqualToString:title];
+}
+
 + (id)songWithTitle:(NSString *)title artist:(NSString *)artist {
     Song *song = [[Song alloc] initWithTitle:title artist:artist];
     

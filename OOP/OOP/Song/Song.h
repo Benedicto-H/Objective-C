@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(id)initWithTitle:(NSString *)title artist:(NSString *)artist;
 -(void)play;
+-(BOOL)isEqualToSongTitle:(NSString *)title;
 
 +(id)songWithTitle:(NSString *)title artist:(NSString *)artist;
 

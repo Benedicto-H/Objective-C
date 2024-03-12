@@ -6,10 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DoSomething.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SomeClass : NSObject {
+@interface SomeClass : NSObject <DoSomething> {
     int publicVar;
 }
 

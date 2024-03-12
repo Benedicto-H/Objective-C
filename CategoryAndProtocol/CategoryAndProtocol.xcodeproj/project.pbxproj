@@ -28,6 +28,7 @@
 /* Begin PBXFileReference section */
 		9327AA852BA06C66004D32E8 /* SomeClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeClass.h; sourceTree = "<group>"; };
 		9327AA862BA06C66004D32E8 /* SomeClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeClass.m; sourceTree = "<group>"; };
+		9327AA892BA07AA7004D32E8 /* DoSomething.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoSomething.h; sourceTree = "<group>"; };
 		939FAAAB2B9F127000B50B13 /* CategoryAndProtocol */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CategoryAndProtocol; sourceTree = BUILT_PRODUCTS_DIR; };
 		939FAAAE2B9F127000B50B13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		939FAAB52B9F129D00B50B13 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
@@ -47,6 +48,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9327AA8A2BA07B28004D32E8 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				939FAAB52B9F129D00B50B13 /* Student.h */,
+				939FAAB62B9F129D00B50B13 /* Student.m */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
+		9327AA8B2BA07B3B004D32E8 /* NSMutableArray+IntExt */ = {
+			isa = PBXGroup;
+			children = (
+				939FAABB2B9F185700B50B13 /* NSMutableArray+IntExt.h */,
+				939FAABC2B9F185700B50B13 /* NSMutableArray+IntExt.m */,
+			);
+			path = "NSMutableArray+IntExt";
+			sourceTree = "<group>";
+		};
+		9327AA8C2BA07B57004D32E8 /* SomeClass+Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9327AA852BA06C66004D32E8 /* SomeClass.h */,
+				9327AA862BA06C66004D32E8 /* SomeClass.m */,
+				9327AA892BA07AA7004D32E8 /* DoSomething.h */,
+			);
+			path = "SomeClass+Protocol";
+			sourceTree = "<group>";
+		};
 		939FAAA22B9F127000B50B13 = {
 			isa = PBXGroup;
 			children = (
@@ -67,12 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				939FAAAE2B9F127000B50B13 /* main.m */,
-				939FAAB52B9F129D00B50B13 /* Student.h */,
-				939FAAB62B9F129D00B50B13 /* Student.m */,
-				939FAABB2B9F185700B50B13 /* NSMutableArray+IntExt.h */,
-				939FAABC2B9F185700B50B13 /* NSMutableArray+IntExt.m */,
-				9327AA852BA06C66004D32E8 /* SomeClass.h */,
-				9327AA862BA06C66004D32E8 /* SomeClass.m */,
+				9327AA8A2BA07B28004D32E8 /* Student */,
+				9327AA8B2BA07B3B004D32E8 /* NSMutableArray+IntExt */,
+				9327AA8C2BA07B57004D32E8 /* SomeClass+Protocol */,
 			);
 			path = CategoryAndProtocol;
 			sourceTree = "<group>";

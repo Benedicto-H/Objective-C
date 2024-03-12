@@ -19,12 +19,18 @@
     int privateVar;
 }
 
+@synthesize number, str;
+
 - (void)publicMethod {
     NSLog(@"Public Method");
 }
 
 - (void)privateMethod {
     NSLog(@"Private Method");
+}
+
+- (void)doSomethingMethod {
+    NSLog(@"Do Something");
 }
 
 @end

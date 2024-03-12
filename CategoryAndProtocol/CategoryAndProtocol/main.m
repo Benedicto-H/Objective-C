@@ -16,6 +16,16 @@ int main(int argc, const char * argv[]) {
         
         [sc publicMethod];
         sc.publicProp = @"PUBLIC PROPERTY";
+        
+        [sc doSomethingMethod];
+        
+        /*
+        id<DoSomething> newSC = [SomeClass new];
+        [newSC doSomethingMethod];
+         */
+        
+        sc.number = 10;
+        sc.str = @"string value from protocol property";
     }
     return 0;
 }

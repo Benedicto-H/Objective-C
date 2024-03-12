@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9327AA872BA06C66004D32E8 /* SomeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9327AA862BA06C66004D32E8 /* SomeClass.m */; };
 		939FAAAF2B9F127000B50B13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 939FAAAE2B9F127000B50B13 /* main.m */; };
 		939FAAB72B9F129D00B50B13 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 939FAAB62B9F129D00B50B13 /* Student.m */; };
 		939FAABD2B9F185700B50B13 /* NSMutableArray+IntExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 939FAABC2B9F185700B50B13 /* NSMutableArray+IntExt.m */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9327AA852BA06C66004D32E8 /* SomeClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeClass.h; sourceTree = "<group>"; };
+		9327AA862BA06C66004D32E8 /* SomeClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeClass.m; sourceTree = "<group>"; };
 		939FAAAB2B9F127000B50B13 /* CategoryAndProtocol */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CategoryAndProtocol; sourceTree = BUILT_PRODUCTS_DIR; };
 		939FAAAE2B9F127000B50B13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		939FAAB52B9F129D00B50B13 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 				939FAAB62B9F129D00B50B13 /* Student.m */,
 				939FAABB2B9F185700B50B13 /* NSMutableArray+IntExt.h */,
 				939FAABC2B9F185700B50B13 /* NSMutableArray+IntExt.m */,
+				9327AA852BA06C66004D32E8 /* SomeClass.h */,
+				9327AA862BA06C66004D32E8 /* SomeClass.m */,
 			);
 			path = CategoryAndProtocol;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9327AA872BA06C66004D32E8 /* SomeClass.m in Sources */,
 				939FAAAF2B9F127000B50B13 /* main.m in Sources */,
 				939FAABD2B9F185700B50B13 /* NSMutableArray+IntExt.m in Sources */,
 				939FAAB72B9F129D00B50B13 /* Student.m in Sources */,

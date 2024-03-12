@@ -6,30 +6,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Student.h"
-#import "NSMutableArray+IntExt.h"
+#import "SomeClass.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         
-        Student *student = [Student new];
+        SomeClass *sc = [SomeClass new];
         
-        [student study];
-        [student enroll];
-        
-        NSMutableArray *array = [NSMutableArray array];
-        
-        [array addObject:@10];
-        
-        NSNumber *number = array[0];
-        NSLog(@"number: %d", [number intValue]);
-        
-        [array addInt:100];
-        NSLog(@"array: %@", array);
-        
-        int iNum = [array intAtIndex:1];
-        NSLog(@"iNum: %d", iNum);
+        [sc publicMethod];
+        sc.publicProp = @"PUBLIC PROPERTY";
     }
     return 0;
 }

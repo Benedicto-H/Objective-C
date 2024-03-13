@@ -195,27 +195,23 @@
   ```objc
   @property (attributes) type name;
   ```
-
-  • `readonly`: getter를 생성
-  <br>
-  • `readwrite`: getter / setter 생성 [기본값]
-  <br>
-  • `assign`: 단순 대입 수행, 원시 타입에 사용
-  <br>
-  • `retain` (ARC 이전) or `strong` (ARC 이후): 객체에 대한 참조를 보관, 해당 객체의 reference count를 증가
-  <br>
-  • `nonatomic`: 멀티 스레드 환경에서 속성에 대한 접근이 원자적으로 처리되지 않음
-  <br>
-  • `atomic`: 해당 속성에 대한 접근이 원자적으로 처리 (즉, thread-safe를 나타냄) [기본값]
-  <br>
-  • `weak`: 약한 참조를 생성, 다른 객체가 이 속성을 참조하지 않으면 자동으로 nil로 설정
-  <br>
-  • `nonnull`: nil 값이 할당되지 않음을 나타냄
-  <br>
-  • `nullable`: nil 값이 할당될 수 있음을 나타냄 [기본값]
-  <br>
-  ...
-  > ✨ 원자적 처리: 멀티 스레드 환경에서 해당 속성에 동시 접근하는 경우, 데이터 무결성 보장을 위해 값을 read, write하는 과정이 **중단 (Lock)** 되어야함
-  > <br>
-  > <br>
   > **[Official Docs]**: [Property Declaration Attributes](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjectiveC/Chapters/ocProperties.html)
+  
+    - **Default**
+      |속성|설명|추가설명|
+      |:---:|:---:|:---:|
+      |`readwrite`|getter / setter 생성||
+      |`atomic`|해당 속성에 대한 접근이 원자적으로 처리|즉, thread-safe를 나타냄|
+      |`nullable`|nil 값이 할당될 수 있음을 나타냄||
+      <br>
+    
+    - **Non-Default**
+      |속성|설명|추가설명|
+      |:---:|:---:|:---:|
+      |`readonly`|getter를 생성||
+      |`assign`|단순 대입 수행, 원시 타입에 사용|Swift의 `unowned`에 해당|
+      |`retain`|객체에 대한 참조를 보관, 해당 객체의 reference count를 증가|ARC 이전 (MRC), Swift의 `strong`에 해당|
+      |`strong`|객체에 대한 참조를 보관, 해당 객체의 reference count를 증가|ARC 이후, Swift의 `strong`에 해당|
+      |`nonatomic`|멀티 스레드 환경에서 속성에 대한 접근이 원자적으로 처리되지 않음|**`원자적 처리`**<br> : 멀티 스레드 환경에서 해당 속성에 동시 접근하는 경우, 데이터 무결성 보장을 위해 값을 read/write하는 과정이 **중단 (Lock)** 되어야함|
+      |`weak`|약한 참조를 생성, 다른 객체가 이 속성을 참조하지 않으면 자동으로 nil로 설정|Swift의 `weak`에 해당|
+      |`nonnull`|nil 값이 할당되지 않음을 나타냄||

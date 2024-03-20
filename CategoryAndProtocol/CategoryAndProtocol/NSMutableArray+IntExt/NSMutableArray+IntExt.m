@@ -13,7 +13,6 @@
     NSNumber *number = [[NSNumber alloc] initWithInt:value];
     
     [self addObject:number];
-//    [self addObject:@(value)]
 }
 
 - (int)intAtIndex:(NSUInteger)index {

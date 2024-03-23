@@ -1,5 +1,5 @@
 # CategoryAndProtocol
-[T아카데미] Objective-C: CategoryAndProtocol
+[Objc] CategoryAndProtocol
 
 ## [TIL] - Category, Protocol
 - **Category**

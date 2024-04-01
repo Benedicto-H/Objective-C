@@ -3,7 +3,7 @@
 
 ## [TIL] - Category, Protocol
 - **Category**
-  <img width="100%" src="https://github.com/Benedicto-H/CategoryAndProtocol/assets/52193695/9ec988af-1d72-47d4-97d4-562531c2f721">
+  <img width="100%" src="https://github.com/Benedicto-H/Objective-C/assets/52193695/ee1bb4d9-92de-45d8-8cd4-a82ccc4612d0">
   
   > • 카테고리 네이밍 규칙: **확장시킬 클래스명+카테고리명**
   <br>
@@ -91,8 +91,9 @@
 ## [Deep Dive] - Category
 - 💡 **Category 주의점**
   - **Method Overriding 주의**
-    <img width="100%" src="https://github.com/Benedicto-H/CategoryAndProtocol/assets/52193695/709acca2-c498-4f8c-b131-be558109c0eb">
-    <img width="100%" src="https://github.com/Benedicto-H/CategoryAndProtocol/assets/52193695/d4e5d88b-1dff-43c5-97bd-c534cffc9070">
+    <img width="100%" src="https://github.com/Benedicto-H/Objective-C/assets/52193695/50f8f335-f35b-4b3e-b18d-0e37e3c7a06f">
+    <img width="100%" src="https://github.com/Benedicto-H/Objective-C/assets/52193695/ee0af9e0-2129-4803-adb9-5556e24a1e67">
+
     > ⚠️ **기존 클래스에서 이미 구현된 메서드를 카테고리에서도 구현하는 것에 대해 warning을 보냄**
     
     ```objc
@@ -158,7 +159,7 @@
 
   @end
   ```
-  <img width="100%" src="https://github.com/Benedicto-H/CategoryAndProtocol/assets/52193695/8a33029c-ae59-4a19-96aa-f77e21f95f7d">
+  <img width="100%" src="https://github.com/Benedicto-H/Objective-C/assets/52193695/4e068cdf-657e-4568-8dc8-1aafac6db9db">
   
   > ⚠️ **외부에서 `extendedMethod()`메서드에 접근을 못함**
   > <br>

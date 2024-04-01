@@ -3,13 +3,13 @@
 
 ## [TIL] - Block Programming
 - **Block**
-  <img width="100%" src="https://github.com/Benedicto-H/Block/assets/52193695/7e134cb4-6979-4d0b-8c14-75013c16ad5b">
+  <img width="100%" src="https://github.com/Benedicto-H/Objective-C/assets/52193695/bc332db7-d2d7-4739-a827-e6a923a0d0b4">
   
   > • `익명 함수(Anonymous Function)`이면서 `객체` (-> 즉, **일급 함수 (First-class Function)**)
   <br>
 
   - Block 선언
-    <img width="100%" src="https://github.com/Benedicto-H/Block/assets/52193695/ce715c5c-486a-4093-ae49-ce150b94d0d4">
+    <img width="100%" src="https://github.com/Benedicto-H/Objective-C/assets/52193695/2e57979a-f941-4bc5-9933-74a5a8860f43">
     
     > • C 언어 스타일 구문 지원과 **Runtime 시점에 동작**
     <br>
@@ -183,7 +183,8 @@
     - 중첩 함수 namedClosure()에서 **외부 값 (= Local variables)을 사용하는 시점에 값을 평가함**
     - 즉, 값을 캡처하면 **`값/참조 타입에 관계없이`** 모두 **`Reference Capture`** 함으로써, **`원본값에 영향을 미침`** (**클로저의 경우도 동일**)
       - **❗ 만약 원본 값을 수정하지 않고 클로저나 중첩 함수 내에서만 수정하려면, **`Capture List '[]' 값 복사 (= Value Capture)`** 를 통해 해결할 수 있음**
-        <img width="100%" src="https://github.com/Benedicto-H/Block/assets/52193695/b55058f6-4df4-4ae3-9543-999b13311f6c">
+        <img width="100%" src="https://github.com/Benedicto-H/Objective-C/assets/52193695/3d0f8a6a-17ad-43b5-b6d8-fcaef132e113">
+
         > **선언하는 시점에 Value Type 값을 Value Capture (즉, const), 상수로 취급하여 캡처가 됨** (**즉, 원본 값에 대하여 수정이 `불가`**)
         
         ```swift
@@ -248,7 +249,8 @@
     //  3rd str: some instance
     ```
     - Block을 **선언/구현 시점에** number를 **`immutable value (= const)`** 로 캡처함 (**값 자체를 캡처**)
-      <img width="100%" src="https://github.com/Benedicto-H/Block/assets/52193695/3c14fbde-d8ab-4919-8345-c5902898264f">
+    
+      <img width="100%" src="https://github.com/Benedicto-H/Objective-C/assets/52193695/6526d226-2de9-4c79-ab21-630d73225866">
     
       > **값 변경 ❌ (불가능함)**
       > <br>
@@ -303,7 +305,7 @@
 
       //  4th number: 10 
       ```
-      <img width="100%" src="https://github.com/Benedicto-H/Block/assets/52193695/8f4e0840-d7fc-4f30-bd2d-8a1c9eeb9f57">
+      <img width="100%" src="https://github.com/Benedicto-H/Objective-C/assets/52193695/5c36884a-930e-47e1-80b6-503f2838b645">
 
       > `__block` 키워드로 원본 값 변경
       <br>

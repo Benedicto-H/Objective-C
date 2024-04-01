@@ -37,7 +37,8 @@
       return 0;
   }
   ```
-    <img width="100%" src="https://github.com/Benedicto-H/Memory/assets/52193695/18e34f77-19af-4348-9b6c-1d6b543e84a0">
+    <img width="100%" src="https://github.com/Benedicto-H/Objective-C/assets/52193695/ce74e8bd-e7a7-4c90-8f14-8ecb37a1de25">
+
 <br>
   
 - **MRC (Manual Reference Counting, 수동 참조 계산)**
@@ -49,7 +50,7 @@
   - 레퍼런스 감소: `release` 등 사용
   <br>
   
-  <img width="100%" src="https://github.com/Benedicto-H/Memory/assets/52193695/d5258e3e-d6c5-4846-8611-5224d2975e30">
+  <img width="100%" src="https://github.com/Benedicto-H/Objective-C/assets/52193695/e765528d-4943-4657-90af-9aec1d4abebf">
 
   > • MRC를 사용하려면 위와 같이 `No`로 설정해줘야 함
   > <br>
@@ -88,7 +89,8 @@
       return 0;
   }
   ```
-  <img width="100%" src="https://github.com/Benedicto-H/Memory/assets/52193695/49262f2f-a333-47fd-8b81-b408ee7c26e0">
+  <img width="100%" src="https://github.com/Benedicto-H/Objective-C/assets/52193695/2e8bfdaf-4366-4109-8f13-4566b2363661">
+
 <br>
 
 > **[Official Docs]**

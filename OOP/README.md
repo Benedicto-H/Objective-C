@@ -181,7 +181,7 @@
       return self
   }
   ```
-  <img width="100%" src="https://github.com/Benedicto-H/OOP/assets/52193695/81bba304-20a9-41c3-ba67-aac9ae419c71">
+  <img width="100%" src="https://github.com/Benedicto-H/Objective-C/assets/52193695/bfa1e55c-3cf6-4fd6-85ed-3ded9120add3">
 
   > • **instancetype**: 클래스의 initailzer의 return type을 **해당 클래스의 인스턴스로 반환**
   > <br>
